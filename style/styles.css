@@ -5,21 +5,27 @@
 
 :root{
     /*Colors*/
-    --text-color: #f0f8ff;
-    --navbar-color: #1e1e1e;
-    --border-color: #757272;
-    --hover-color: #757272;
-    --box-shadow-color: #f0f8ff;
-    --top-menu-color: #000000;
-    --search-menu-back-color:#4b4b4b;
-    --main-color: #313131;
+    --hue-color:206;
+    --black-color: hsl(var(--hue-color),4%,4%);
+    --black-color-alt: hsl(var(--hue-color),4%,4%);
+    --text-color: hsl(var(--hue-color),4%,75%);
+    --text-color-light: hsl(var(--hue-color),4%,65%);
+    --body-color: hsl(var(--hue-color),4%,6%);
+    --conteiner-color: hsl(var(--hue-color),4%,10%);
+    --white-color:#fff;
+    --title-color: hsl(var(--hue-color),4%,95%);
+    --text-gradient: linear-gradient(hsl(var(--hue-color),4%,24%),hsl(var(--hue-color),4%,8%));
+    /*fonts*/
+    --body-font: sans-serif;
+    --body-font-size: 15px;
+    --body-line-height: 1.5;
 }
 
 body{
     box-sizing: border-box;
-   font-family: sans-serif;
-   font-size: 15px;
-   line-height: 1.5;
+   font-family: var(--body-font);
+   font-size: var(--body-font-size);
+   line-height: var(--body-line-height);
 }
 
 #header{
