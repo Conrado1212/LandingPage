@@ -22,6 +22,43 @@ body{
    line-height: 1.5;
 }
 
-.header{
-    
+#header{
+    width: 100%;
+    display: flex;
+    background-color: var(--border-color);
+    margin: auto;
+    min-height: 75px;
+    align-items: center;
+    top: 0;
 }
+#nav-bar{
+
+}
+#nav-bar ul{
+    list-style: none;
+}
+#nav-bar ul li{
+    display: inline;
+    padding: 2px;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.logo{
+    width: 30vh;
+}
+.logo img{
+    width: 30%;
+}
+.logo i{
+    color: var(--text-color);
+}
+.sticky{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
