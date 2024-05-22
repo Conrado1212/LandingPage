@@ -19,15 +19,23 @@
     --body-font: sans-serif;
     --body-font-size: 15px;
     --body-line-height: 1.5;
+    /*font-weight*/
+    --font-h: 800;
+    /*z-index*/
+    --z-index:100;
 }
-
+@media screen and(min-width: 968px){
+    :root{
+    }
+}
+/*base*/
 body{
     box-sizing: border-box;
    font-family: var(--body-font);
    font-size: var(--body-font-size);
    line-height: var(--body-line-height);
 }
-
+/*header*/
 #header{
     width: 100%;
     display: flex;
@@ -37,6 +45,7 @@ body{
     align-items: center;
     top: 0;
 }
+/*nav-bar*/
 #nav-bar{
 
 }
@@ -51,6 +60,7 @@ body{
     text-decoration: none;
     color: var(--text-color);
 }
+/*logo*/
 .logo{
     width: 30vh;
 }
@@ -60,11 +70,12 @@ body{
 .logo i{
     color: var(--text-color);
 }
+
 .sticky{
     width: 100%;
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 100;
+    z-index: var(--z-index);
 }
 
