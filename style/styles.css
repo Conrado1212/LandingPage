@@ -89,7 +89,12 @@ body{
     font-size: var(--title-font-size);
     font-weight: var( --font-h);
 }
-
+.logo i{
+    cursor: pointer;
+}
+.logo i:hover{
+    color: var(--text-color-light);
+}
 .sticky{
     width: 100%;
     position: fixed;
