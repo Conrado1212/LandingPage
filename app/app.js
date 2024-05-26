@@ -1,3 +1,21 @@
+var  body = document.querySelector("body"),
+navbar = body.querySelector("#header"),
+modeSw = body.querySelector(".toggle-sw");
+//modeText = body.querySelector(".mode-text");
+//main = body.querySelector("#main-doc");
+// toggle.addEventListener("click", () =>{
+//   navbar.classList.toggle("close");
+//   main.classList.toggle("toggle-main");
+// })
+
+
+modeSw.addEventListener("click", () =>{
+  body.classList.toggle("white");
+ // body.classList.contains("white") ? modeText.innerText ="Light Mode" : modeText.innerText ="Dark Mode"
+ })
+
+
+
 $(document).ready(function() {
     var NavY = $('#header').offset().top;
 
@@ -15,22 +33,7 @@ $(document).ready(function() {
 
 
 
-var  body = document.querySelector("body"),
-navbar = document.getElementById("#header"),
-//toggle = body.querySelector(".toggle"),
-modeSw = body.querySelector(".toggle-sw");
-//modeText = body.querySelector(".mode-text");
-//main = body.querySelector("#main-doc");
-// toggle.addEventListener("click", () =>{
-//   navbar.classList.toggle("close");
-//   main.classList.toggle("toggle-main");
-// })
 
-
-modeSw.addEventListener("click", () =>{
-  body.classList.toggle("white");
- // body.classList.contains("white") ? modeText.innerText ="Light Mode" : modeText.innerText ="Dark Mode"
- })
 
 window.addEventListener('load',function(){
     $('.navbar li a').click(function () {
