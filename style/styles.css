@@ -49,13 +49,8 @@ body{
 
 body.white{
     --text-color: #000000;
-    --navbar-color: #d6d3d3;
-    --border-color: #757272;
-    --hover-color: #757272;
-    --box-shadow-color: #f0f8ff;
-    --top-menu-color: #fff;
-    --search-menu-back-color:#e2e0e0;
-    --body-color: #fff;
+    --text-color-light: #ddd;
+    --body-color: #999;
 }
 /*header*/
 #header{
@@ -89,6 +84,20 @@ body.white{
     font-weight: var(--font-m);
     letter-spacing: var(--letter-1);
 }
+/*mobile menu*/
+.bars-xmark{
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.bars-xmark i{
+    position: absolute;
+    transition: var(--tran-03); 
+}
+.bars-xmark i.bars,.bars-xmark i.xmark{
+    opacity: 0;
+}
 /*logo*/
 .logo{
     width: 30vh;
@@ -100,6 +109,7 @@ body.white{
     color: var(--text-color);
    width: 30%;
 }
+
 .logo i,.logo span{
     color: var(--text-color);
     font-size: var(--title-font-size);
@@ -126,6 +136,7 @@ body.white{
 .mode{
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .mode-content .mode .moon-sun{
