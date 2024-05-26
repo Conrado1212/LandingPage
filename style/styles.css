@@ -46,6 +46,17 @@ body{
    line-height: var(--body-line-height);
    background-color: var(--body-color);
 }
+
+body.white{
+    --text-color: #000000;
+    --navbar-color: #d6d3d3;
+    --border-color: #757272;
+    --hover-color: #757272;
+    --box-shadow-color: #f0f8ff;
+    --top-menu-color: #fff;
+    --search-menu-back-color:#e2e0e0;
+    --main-color: #f7f5f5;
+}
 /*header*/
 #header{
     width: 100%;
@@ -171,8 +182,7 @@ body.white .mode-content .mode i.moon{
     background: var(--text-color);
     border-radius: 50%;
     transform: translateY(50%);
-   
-   top: -4px;
+     top: -4px;
     left: 3px;
     transition: var(--tran-03); 
 }
