@@ -159,10 +159,28 @@ body.white .mode-content .mode i.moon{
     width: 40px;
     background: var(--white-color);
     color: var(--text-color);
-    border-left: 1px solid var(--white-color);
-    border-bottom: 1px solid var(--white-color);
+    border-left: 1px solid var(--text-color-light);
+    border-bottom: 1px solid var(--text-color-light);
 }
 
+.sw::before{
+    content:'';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: var(--text-color);
+    border-radius: 50%;
+    transform: translateY(50%);
+   
+   top: -4px;
+    left: 3px;
+    transition: var(--tran-03); 
+}
+
+
+body.white .sw::before{
+    left: 24px;
+}
 /*sticky js class*/
 .sticky{
     width: 100%;
