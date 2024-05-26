@@ -15,6 +15,7 @@
     /*fonts*/
     --body-font: sans-serif;
     --body-font-size: 15px;
+    --a-font-size:18px;
     --title-font-size: 24px;
     --body-line-height: 1.5;
     /*font-weight*/
@@ -50,7 +51,7 @@ body{
 body.white{
     --text-color: #000000;
     --text-color-light: #ddd;
-    --body-color: #999;
+    --body-color: #fff;
 }
 /*header*/
 #header{
@@ -83,6 +84,7 @@ body.white{
     color: var(--text-color);
     font-weight: var(--font-m);
     letter-spacing: var(--letter-1);
+    font-size: var(--a-font-size);
 }
 /*mobile menu*/
 .bars-xmark{
@@ -179,8 +181,7 @@ body.white .mode-content .mode i.moon{
     transition: var(--tran-03); 
     height: 22px;
     width: 40px;
-    background: var(--white-color);
-    color: var(--text-color);
+    background: var(--text-color);
     border-left: 1px solid var(--text-color-light);
     border-bottom: 1px solid var(--text-color-light);
 }
@@ -190,7 +191,7 @@ body.white .mode-content .mode i.moon{
     position: absolute;
     height: 15px;
     width: 15px;
-    background: var(--text-color);
+    background: var(--white-color);
     border-radius: 50%;
     transform: translateY(50%);
      top: -4px;

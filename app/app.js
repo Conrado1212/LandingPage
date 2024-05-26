@@ -1,6 +1,7 @@
 var  body = document.querySelector("body"),
 navbar = body.querySelector("#header"),
-modeSw = body.querySelector(".toggle-sw");
+modeSw = body.querySelector(".toggle-sw"),
+img = navbar.querySelector("img");
 //modeText = body.querySelector(".mode-text");
 //main = body.querySelector("#main-doc");
 // toggle.addEventListener("click", () =>{
@@ -11,6 +12,7 @@ modeSw = body.querySelector(".toggle-sw");
 
 modeSw.addEventListener("click", () =>{
   body.classList.toggle("white");
+  body.classList.contains("white") ? img.src="img/logo-dark.png" : img.src="img/logo.png";
  // body.classList.contains("white") ? modeText.innerText ="Light Mode" : modeText.innerText ="Dark Mode"
  })
 
