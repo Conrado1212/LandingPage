@@ -1,7 +1,10 @@
 var  body = document.querySelector("body"),
 navbar = body.querySelector("#header"),
 modeSw = body.querySelector(".toggle-sw"),
-img = navbar.querySelector("img");
+img = navbar.querySelector("img"),
+menu = document.getElementById("nav-bar"),
+toggle =  body.querySelector(".toggle"),
+closee =  body.querySelector(".close");
 //modeText = body.querySelector(".mode-text");
 //main = body.querySelector("#main-doc");
 // toggle.addEventListener("click", () =>{
@@ -14,8 +17,28 @@ modeSw.addEventListener("click", () =>{
   body.classList.toggle("white");
   body.classList.contains("white") ? img.src="img/logo-dark.png" : img.src="img/logo.png";
  // body.classList.contains("white") ? modeText.innerText ="Light Mode" : modeText.innerText ="Dark Mode"
- })
+ });
 
+
+if(toggle){
+ toggle.addEventListener("click",()=>{
+  menu.classList.add('show-menu');
+  toggle.classList.add('hidden');
+  closee.classList.add('see');
+  //add x 
+ 
+ });
+};
+
+
+if(closee){
+  closee.addEventListener("click",()=>{
+   menu.classList.remove('show-menu');
+   //add menu 
+   toggle.classList.remove('hidden');
+   closee.classList.remove('see');
+  });
+ };
 
 
 $(document).ready(function() {

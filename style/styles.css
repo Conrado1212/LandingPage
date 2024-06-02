@@ -33,6 +33,7 @@
     }
 }
 @media screen and (max-width: 767px){
+  
    #nav-bar{
        background-color: var(--body-color);
        top:-100%;
@@ -42,12 +43,19 @@
        position: fixed;
    }
    .bars-xmark i.bars{
-        opacity: 1!important;
+       opacity: 1!important;
         position: absolute;
    }
    
    .bars-xmark i.xmark{
-    opacity: 0;
+   display: none;;
+}
+.hidden{
+    display: none;
+}
+.see{
+    display: block!important;
+    opacity: 1!important;
 }
 #nav-bar ul{
     display: flex;
@@ -55,6 +63,11 @@
     flex-direction: column;
     row-gap: 1rem;
 }
+.show-menu{
+    top:75!important;
+}
+
+
 }
 /*base*/
 *{
