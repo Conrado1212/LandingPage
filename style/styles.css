@@ -4,7 +4,7 @@
     /*Colors*/
     --hue-color:206;
     --black-color: hsl(var(--hue-color),4%,4%);
-    --black-color-alt: hsl(var(--hue-color),4%,4%);
+    --black-color-alt: hsl(var(--hue-color),4%,8%);
     --text-color: hsl(var(--hue-color),4%,75%);
     --text-color-light: hsl(var(--hue-color),4%,65%);
     --body-color: hsl(var(--hue-color),4%,6%);
@@ -17,6 +17,7 @@
     --body-font-size: 15px;
     --a-font-size:18px;
     --title-font-size: 24px;
+    --title-home:32px;
     --body-line-height: 1.5;
     /*font-weight*/
     --font-h: 800;
@@ -26,7 +27,7 @@
     /*z-index*/
     --z-index:100;
     /*tansition*/
-    --tran-03:  0.3s ease;
+    --tran-03:  0.3s ease all;
 }
 @media screen and(min-width: 968px){
     :root{
@@ -203,7 +204,7 @@ background-clip: text;
 .mode-content .mode i.sun{
     opacity: 0;
 }
-
+/*white mode*/
 body.white .mode-content .mode i.sun{
     opacity:1;
 }
@@ -265,4 +266,86 @@ body.white .sw::before{
 color: transparent;
 -webkit-background-clip: text;
 background-clip: text;
+}
+
+
+.section{
+    padding: 4rem 0 2rem;
+}
+.main{
+    overflow: hidden;
+}
+.container{
+    max-width: 986px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid{
+    display: grid;
+}
+
+/*home*/
+.home_png{
+    width: 250px;
+    position: absolute;
+    right: 1.5rem;
+    
+}
+.home_data{
+    padding-top: 5rem;
+}
+.home_header{
+    position: relative;
+}
+.home_title{
+    font-size: var(--title-home);
+    background: var(--text-gradient);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-left: 10px;
+    line-height: 6rem;
+}
+.home_sub{
+    font-size: var(--title-font-size);
+    margin-bottom: 30px;
+    color: var(--text-color);
+    margin-left: 10px;
+    
+}
+.home_desc{
+  font-size: var(--a-font-size);
+  font-weight: var(--font-m);
+  margin-bottom: 10px;  
+  margin-left: 10px;
+  color: var(--text-color-light);
+  line-height: var(--body-line-height);
+  
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    margin-left: 15px;
+    transition: .3s;
+}
+.button:hover{
+    background-color:var(--black-color-alt);
+}
+.button.icon{
+    font-size: 1rem;
+}
+.button-flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+.home-price{
+    color: var(--text-color);
+    font-size: var(--body-font-size);
+    font-weight: var(--font-m);
+    margin-left: .75rem;
 }

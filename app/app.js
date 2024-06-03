@@ -4,6 +4,7 @@ modeSw = body.querySelector(".toggle-sw"),
 img = navbar.querySelector("img"),
 menu = document.getElementById("nav-bar"),
 toggle =  body.querySelector(".toggle"),
+navlink= document.querySelectorAll('.nav-link'),
 closee =  body.querySelector(".close");
 //modeText = body.querySelector(".mode-text");
 //main = body.querySelector("#main-doc");
@@ -22,9 +23,9 @@ modeSw.addEventListener("click", () =>{
 
 if(toggle){
  toggle.addEventListener("click",()=>{
-  menu.classList.add('show-menu');
-  toggle.classList.add('hidden');
-  closee.classList.add('see');
+  menu.classList.toggle('show-menu');
+  toggle.classList.toggle('hidden');
+  closee.classList.toggle('see');
   //add x 
  
  });
@@ -39,7 +40,14 @@ if(closee){
    closee.classList.remove('see');
   });
  };
-
+/*Remove menu on click link */ 
+function linkNav(){
+  const menu = document.getElementById("nav-bar")
+  menu.classList.remove('show-menu');
+  toggle.classList.remove('hidden');
+  closee.classList.remove('see');
+}
+navlink.forEach(e => e.addEventListener('click',linkNav));
 
 $(document).ready(function() {
     var NavY = $('#header').offset().top;
