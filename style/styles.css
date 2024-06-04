@@ -17,7 +17,7 @@
     --body-font-size: 15px;
     --a-font-size:18px;
     --title-font-size: 24px;
-    --title-home:32px;
+    --title-home:48px;
     --body-line-height: 1.5;
     /*font-weight*/
     --font-h: 800;
@@ -271,6 +271,7 @@ background-clip: text;
 
 .section{
     padding: 4rem 0 2rem;
+    
 }
 .main{
     overflow: hidden;
@@ -348,4 +349,34 @@ background-clip: text;
     font-size: var(--body-font-size);
     font-weight: var(--font-m);
     margin-left: .75rem;
+}
+/*specs*/
+.section_title{
+    font-size: var(--title-home);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.section_title-gradient{
+    color: transparent;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* social */
+.social{
+width: 100%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+.social_id{
+    font-size: var(--title-home);
+    color: var(--white-color);
+}
+.social_conteiner{
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    row-gap: 5rem;
+    justify-content: center;
+    align-items: center;
 }
