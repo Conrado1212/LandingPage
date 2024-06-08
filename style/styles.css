@@ -427,7 +427,7 @@ font-weight: var(--font-m);
 .products_container{
     grid-template-columns: repeat(2,1fr);
     gap: 5rem 1.5rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
 .products_card{
     position: relative;
@@ -436,18 +436,33 @@ font-weight: var(--font-m);
     padding: .75rem;
     border-radius: .5rem;
     display: grid;
+    margin-bottom: .75rem;
 }
 .products_img{
   position: absolute;
   inset:0;
   margin-left: auto;
   margin-right: auto;
-  top: -3rem;
+  top: -4rem;
 }
 .products_content{
     align-self: flex-end;
 }
-.products_title{
-    
+.product_title,.products_price{
+font-size: var(--title-font-size);
+color: var(--text-color);
+}
+
+.products_price{
+    font-weight: var(--font-m);
+}
+.products_button{
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    cursor: pointer;
+}
+.button_icon{
+    font-size:var(--a-font-size) ;
 }
 /*review*/
