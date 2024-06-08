@@ -357,6 +357,7 @@ background-clip: text;
     font-size: var(--title-home);
     text-align: center;
     margin-bottom: 2.5rem;
+    white-space: pre;
 }
 .section_title-gradient{
     color: transparent;
@@ -419,3 +420,34 @@ font-weight: var(--font-m);
     right: -14rem;
 }
 /*Products*/
+.products_line{
+  line-height: var(--body-line-height);
+
+}
+.products_container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem 1.5rem;
+    padding-top: 2rem;
+}
+.products_card{
+    position: relative;
+    height: 532px;
+    background-color: var(--conteiner-color);
+    padding: .75rem;
+    border-radius: .5rem;
+    display: grid;
+}
+.products_img{
+  position: absolute;
+  inset:0;
+  margin-left: auto;
+  margin-right: auto;
+  top: -3rem;
+}
+.products_content{
+    align-self: flex-end;
+}
+.products_title{
+    
+}
+/*review*/
