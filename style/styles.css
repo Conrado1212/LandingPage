@@ -88,9 +88,12 @@ body{
 }
 
 body.white{
-    --text-color: #000000;
-    --text-color-light: #ddd;
+    --text-color:hsl(var(--hue-color),4%,8%);;
+    --text-color-light:hsl(var(--hue-color),4%,16%);;
     --body-color: #fff;
+    --text-gradient: linear-gradient(hsl(var(--hue-color),100%,100%),hsl(var(--hue-color),4%,4%));
+    --conteiner-color: hsl(var(--hue-color),10%,95%);
+    --black-color:hsl(var(--hue-color),10%,85%);
 }
 /*header*/
 #header{
