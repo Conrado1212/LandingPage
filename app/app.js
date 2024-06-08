@@ -40,14 +40,7 @@ if(closee){
    closee.classList.remove('see');
   });
  };
-/*Remove menu on click link */ 
-function linkNav(){
-  const menu = document.getElementById("nav-bar")
-  menu.classList.remove('show-menu');
-  toggle.classList.remove('hidden');
-  closee.classList.remove('see');
-}
-navlink.forEach(e => e.addEventListener('click',linkNav));
+
 
 $(document).ready(function() {
     var NavY = $('#header').offset().top;
@@ -69,8 +62,8 @@ $(document).ready(function() {
 
 
 window.addEventListener('load',function(){
-    $('.navbar li a').click(function () {
-        $('.navbar li a').removeClass('active');
+    $('#nav-bar li a').click(function () {
+        $('#nav-bar li a').removeClass('active');
   
       $(this).addClass('active');
     })
@@ -79,7 +72,17 @@ window.addEventListener('load',function(){
 // get the actual pathname:
 var path = location.pathname;
 // filter menu items to find one that has anchor tag with matching href:
-$('.navbar li a').filter(function(){
+$('#nav-bar li a').filter(function(){
     return '/' + $('a', this).attr('href') === path;
 // add class active to the item:
 }).addClass('active');
+
+
+/*Remove menu on click link */ 
+function linkNav(){
+  const menu = document.getElementById("nav-bar")
+  menu.classList.remove('show-menu');
+  toggle.classList.remove('hidden');
+  closee.classList.remove('see');
+}
+navlink.forEach(e => e.addEventListener('click',linkNav));        
