@@ -85,4 +85,24 @@ function linkNav(){
   toggle.classList.remove('hidden');
   closee.classList.remove('see');
 }
-navlink.forEach(e => e.addEventListener('click',linkNav));        
+navlink.forEach(e => e.addEventListener('click',linkNav));      
+/*scroll up */
+  function scrollUp(){
+    let scroll = document.getElementById('scroll-up');
+    this.scrollY >= 200 ? scroll.classList.add('show-scroll') :  scroll.classList.remove('show-scroll');
+  }
+  window.addEventListener('scroll', scrollUp);
+  /*active link scroll */
+let sections = document.querySelectorAll('section[id')
+
+function scrollActive(){
+  let scrollY = window.pageYOffset;
+  sections.forEach(e=>{
+    let height = e.offsetHeight;
+    let top = e.offsetTop - 50;
+    sectionId = e.getAttribute('id');
+    scrollY > top && scrollY <=top + height ? document.querySelector('#nav-bar a[href*='+ sectionId + ']').classList.add('active') :document.querySelector('#nav-bar a[href*='+ sectionId + ']').classList.remove('active');
+  })
+
+}
+window.addEventListener('scroll', scrollActive)
