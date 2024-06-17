@@ -71,7 +71,7 @@
 
 
 }
-@media screen and (max-width: 576px){
+@media only screen and (max-width: 576px){
     #nav-bar{
         background-color: var(--body-color);
         top:-100%;
@@ -120,7 +120,7 @@
 }
 
 }
-@media screen and (max-width: 360px){
+@media only screen and (max-width: 360px){
     .container{
         margin-left: 1rem;
         margin-right: 1rem;
