@@ -107,3 +107,22 @@ navlink.forEach(e => e.addEventListener('click',linkNav));
  }
  window.addEventListener('scroll', scrollActive)
 
+/*scroll reveal*/
+
+var scrollRev = ScrollReveal({
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+})
+
+scrollRev.reveal('.home_header, .section_title',{delay: 600});
+scrollRev.reveal('.home_png',{delay:1000, origin: 'top'});
+
+
+scrollRev.reveal('.social_id, .products_card, .footer_content',{origin: 'top', interval:100});
+
+scrollRev.reveal('.specs_data',{origin: 'left', interval:100});
+
+scrollRev.reveal('.specs_img',{origin: 'right'});
+
+scrollRev.reveal('.specs_img',{origin: 'top'});
