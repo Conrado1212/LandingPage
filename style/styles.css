@@ -255,11 +255,18 @@ background-clip: text;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    grid-template-columns: .8fr 1fr;
 }  */
+.home_container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    grid-template-columns: repeat(2,1fr)
+}
 .home_png{
     width: 450px;
     position: absolute;
-    right: 20rem;
+
 }
 .home_data{
     padding-top: 5rem;
