@@ -457,8 +457,9 @@ color: var(--text-color);
     right: 0;
 }
 /*newsletter*/
-.newsletter_content{
-   
+.newsletter{
+   padding-top: 20rem;
+   padding-bottom: 20rem;
 }
 .newsletter_form{
     display: flex;

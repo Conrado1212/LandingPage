@@ -106,3 +106,4 @@ navlink.forEach(e => e.addEventListener('click',linkNav));
 
  }
  window.addEventListener('scroll', scrollActive)
+
